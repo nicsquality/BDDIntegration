@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Test runner]">
+  <test name="Package with subpackages">
+    <packages>
+      <package name="com.dcx.runner.*"/>
+    </packages>
+    <classes>
+      <class name="com.dcx.runner.Runner"/>
+    </classes>
+  </test> <!-- Package with subpackages -->
+</suite> <!-- Failed suite [Test runner] -->
