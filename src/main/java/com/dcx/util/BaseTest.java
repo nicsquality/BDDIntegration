@@ -29,6 +29,7 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
@@ -38,7 +39,8 @@ public class BaseTest
 {
 	Properties OS = null;
 	Properties CONFIG = null;
-	AndroidDriver<AndroidElement> driver;
+//	AndroidDriver<AndroidElement> driver;
+	AppiumDriver<AndroidElement> driver;
 	public static BaseTest base = null;
 	public static ExtentReports extent = ExtentManager.getInstance();
 	public static ExtentTest test = null;
@@ -135,7 +137,7 @@ public class BaseTest
 			e.printStackTrace();
 		}
 		
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 	}
 	

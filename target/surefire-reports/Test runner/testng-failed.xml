@@ -9,4 +9,15 @@
       <class name="com.dcx.runner.Runner"/>
     </classes>
   </test> <!-- Package with subpackages -->
+  <test name="Package with subpackages(failed)">
+    <classes>
+      <class name="com.dcx.runner.Runner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.dcx.runner.Runner -->
+    </classes>
+  </test> <!-- Package with subpackages(failed) -->
 </suite> <!-- Failed suite [Test runner] -->

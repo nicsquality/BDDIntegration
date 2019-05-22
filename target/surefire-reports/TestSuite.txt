@@ -1,4 +1,20 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 248.636 sec - in TestSuite
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 80.045 sec <<< FAILURE! - in TestSuite
+feature(com.dcx.runner.Runner)  Time elapsed: 78.589 sec  <<< FAILURE!
+cucumber.runtime.CucumberException: 
+org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: el.setText() failed!
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'din16001110.corp.capgemini.com', ip: '10.79.1.115', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_181'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.google.android.maps.Map..., appPackage: com.google.android.apps.maps, databaseEnabled: false, desired: {appActivity: com.google.android.maps.Map..., appPackage: com.google.android.apps.maps, deviceName: 3300ecdcbc951375, platformName: android, takesScreenshot: true}, deviceManufacturer: Xiaomi, deviceModel: Redmi Note 3, deviceName: 10.79.1.234:5557, deviceScreenSize: 1080x1920, deviceUDID: 10.79.1.234:5557, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, platform: LINUX, platformName: Android, platformVersion: 6.0.1, takesScreenshot: true, warnings: {}, webStorageEnabled: false}
+Session ID: b005998c-0339-4d38-a30c-9b120cd13212
+Caused by: org.openqa.selenium.WebDriverException: 
+An unknown server-side error occurred while processing the command. Original error: el.setText() failed!
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'din16001110.corp.capgemini.com', ip: '10.79.1.115', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_181'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.google.android.maps.Map..., appPackage: com.google.android.apps.maps, databaseEnabled: false, desired: {appActivity: com.google.android.maps.Map..., appPackage: com.google.android.apps.maps, deviceName: 3300ecdcbc951375, platformName: android, takesScreenshot: true}, deviceManufacturer: Xiaomi, deviceModel: Redmi Note 3, deviceName: 10.79.1.234:5557, deviceScreenSize: 1080x1920, deviceUDID: 10.79.1.234:5557, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, platform: LINUX, platformName: Android, platformVersion: 6.0.1, takesScreenshot: true, warnings: {}, webStorageEnabled: false}
+Session ID: b005998c-0339-4d38-a30c-9b120cd13212
+
