@@ -125,13 +125,14 @@ public class BaseTest
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability("platformName","Android");
 		capabilities.setCapability("deviceName", CONFIG.getProperty("deviceName"));
+		capabilities.setCapability("udid", System.getProperty("Mobile_ip"));
 		capabilities.setCapability("platformVersion", CONFIG.getProperty("platformVersion"));
 		capabilities.setCapability("appPackage", CONFIG.getProperty("appPackage"));
 		capabilities.setCapability("appActivity", CONFIG.getProperty("appActivity"));
 		capabilities.setCapability(MobileCapabilityType.TAKES_SCREENSHOT, "true");
 		
 		try {
-			driver = new AndroidDriver<AndroidElement>(new URL("http://0.0.0.0:4723/wd/hub"),capabilities);
+			driver = new AndroidDriver<AndroidElement>(new URL("http://0.0.0.0:"+System.getProperty("Port")+"/wd/hub"),capabilities);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
