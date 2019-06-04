@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="80.045" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="127.756" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
     <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.5.4/libexec/bin/m2.conf"/>
-    <property name="Mobile_ip" value="10.79.1.234:5557"/>
+    <property name="Mobile_ip" value="10.79.1.148:5555"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/sekhar/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="maven.conf" value="/usr/local/Cellar/maven/3.5.4/libexec/conf"/>
@@ -43,10 +43,11 @@
     <property name="file.encoding" value="UTF-8"/>
     <property name="user.name" value="sekhar"/>
     <property name="java.class.path" value="/usr/local/Cellar/maven/3.5.4/libexec/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="port" value="4701"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -DMobile_ip=10.79.1.234:5557"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -DMobile_ip=10.79.1.148:5555 -Dport=4701"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -64,109 +65,5 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="feature" classname="com.dcx.runner.Runner" time="78.589">
-    <failure message="org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: el.setText() failed!&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;din16001110.corp.capgemini.com&apos;, ip: &apos;10.79.1.115&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;1.8.0_181&apos;&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Capabilities {appActivity: com.google.android.maps.Map..., appPackage: com.google.android.apps.maps, databaseEnabled: false, desired: {appActivity: com.google.android.maps.Map..., appPackage: com.google.android.apps.maps, deviceName: 3300ecdcbc951375, platformName: android, takesScreenshot: true}, deviceManufacturer: Xiaomi, deviceModel: Redmi Note 3, deviceName: 10.79.1.234:5557, deviceScreenSize: 1080x1920, deviceUDID: 10.79.1.234:5557, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, platform: LINUX, platformName: Android, platformVersion: 6.0.1, takesScreenshot: true, warnings: {}, webStorageEnabled: false}&#10;Session ID: b005998c-0339-4d38-a30c-9b120cd13212" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: 
-org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: el.setText() failed!
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'din16001110.corp.capgemini.com', ip: '10.79.1.115', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_181'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.google.android.maps.Map..., appPackage: com.google.android.apps.maps, databaseEnabled: false, desired: {appActivity: com.google.android.maps.Map..., appPackage: com.google.android.apps.maps, deviceName: 3300ecdcbc951375, platformName: android, takesScreenshot: true}, deviceManufacturer: Xiaomi, deviceModel: Redmi Note 3, deviceName: 10.79.1.234:5557, deviceScreenSize: 1080x1920, deviceUDID: 10.79.1.234:5557, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, platform: LINUX, platformName: Android, platformVersion: 6.0.1, takesScreenshot: true, warnings: {}, webStorageEnabled: false}
-Session ID: b005998c-0339-4d38-a30c-9b120cd13212
-Caused by: org.openqa.selenium.WebDriverException: 
-An unknown server-side error occurred while processing the command. Original error: el.setText() failed!
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'din16001110.corp.capgemini.com', ip: '10.79.1.115', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_181'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.google.android.maps.Map..., appPackage: com.google.android.apps.maps, databaseEnabled: false, desired: {appActivity: com.google.android.maps.Map..., appPackage: com.google.android.apps.maps, deviceName: 3300ecdcbc951375, platformName: android, takesScreenshot: true}, deviceManufacturer: Xiaomi, deviceModel: Redmi Note 3, deviceName: 10.79.1.234:5557, deviceScreenSize: 1080x1920, deviceUDID: 10.79.1.234:5557, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, platform: LINUX, platformName: Android, platformVersion: 6.0.1, takesScreenshot: true, warnings: {}, webStorageEnabled: false}
-Session ID: b005998c-0339-4d38-a30c-9b120cd13212
-</failure>
-    <system-out><![CDATA[Feature: Finding distance in two locations
-Launching app
-Clicking on - GoButton_id
-
-  Scenario: Navigate to Go button                         &amp#27;[90m# findDistance.feature:3&amp#27;[0m
-    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI launch app to execute testcase "&amp#27;[0m&amp#27;[32m&amp#27;[1mFindDistance&amp#27;[0m&amp#27;[32m"&amp#27;[0m &amp#27;[90m# findDistanceTest.I_launch_app_to_execute_testcase(String)&amp#27;[0m
-    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click on "&amp#27;[0m&amp#27;[32m&amp#27;[1mGoButton_id&amp#27;[0m&amp#27;[32m"&amp#27;[0m                          &amp#27;[90m# findDistanceTest.i_click_on(String)&amp#27;[0m
-
-  Scenario Outline: Finding distance                                  &amp#27;[90m# findDistance.feature:8&amp#27;[0m
-    &amp#27;[36mGiven &amp#27;[0m&amp#27;[36mtestcase is "FindDistance" and testcaseId is "<TestCaseId>"&amp#27;[0m
-    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI click on "FromField_id"&amp#27;[0m
-    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI enter "FromTextField_id" as "StartingPoint"&amp#27;[0m
-    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI click on "DestinationField_id"&amp#27;[0m
-    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI enter "DestinationTextField_id" as "DestinationPoint"&amp#27;[0m
-    &amp#27;[36mThen &amp#27;[0m&amp#27;[36mDistance found in "DistanceOutput_xpath" should be correct&amp#27;[0m
-
-    Examples: 
-initializing xl - tascase FindDistance---TC1
-FindDistance is starting from 1
-Total no. of rows are 2
-Total no. of cols are 3
-Clicking on - FromField_id
-Entering text in the field FromTextField_id
-Clicking on - DestinationField_id
-Entering text in the field DestinationTextField_id
-(1.5 km)
-distance found on App is  1.5 km
-{   "destination_addresses" : [ "14 W Pier, Howth, Dublin, Ireland" ],   "origin_addresses" : [ "Ireland's Eye, Co. Dublin, Ireland" ],   "rows" : [      {         "elements" : [            {               "distance" : {                  "text" : "1.5 km",                  "value" : 1540               },               "duration" : {                  "text" : "8 mins",                  "value" : 453               },               "status" : "OK"            }         ]      }   ],   "status" : "OK"}
-1.5 km
-expected distance is 1.5
-
-  Scenario Outline: Finding distance                                &amp#27;[90m# findDistance.feature:18&amp#27;[0m
-    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mtestcase is "&amp#27;[0m&amp#27;[32m&amp#27;[1mFindDistance&amp#27;[0m&amp#27;[32m" and testcaseId is "&amp#27;[0m&amp#27;[32m&amp#27;[1mTC1&amp#27;[0m&amp#27;[32m"&amp#27;[0m        &amp#27;[90m# findDistanceTest.testcase_is(String,String)&amp#27;[0m
-    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click on "&amp#27;[0m&amp#27;[32m&amp#27;[1mFromField_id&amp#27;[0m&amp#27;[32m"&amp#27;[0m                                   &amp#27;[90m# findDistanceTest.i_click_on(String)&amp#27;[0m
-    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI enter "&amp#27;[0m&amp#27;[32m&amp#27;[1mFromTextField_id&amp#27;[0m&amp#27;[32m" as "&amp#27;[0m&amp#27;[32m&amp#27;[1mStartingPoint&amp#27;[0m&amp#27;[32m"&amp#27;[0m               &amp#27;[90m# findDistanceTest.i_enter_as(String,String)&amp#27;[0m
-    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click on "&amp#27;[0m&amp#27;[32m&amp#27;[1mDestinationField_id&amp#27;[0m&amp#27;[32m"&amp#27;[0m                            &amp#27;[90m# findDistanceTest.i_click_on(String)&amp#27;[0m
-    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI enter "&amp#27;[0m&amp#27;[32m&amp#27;[1mDestinationTextField_id&amp#27;[0m&amp#27;[32m" as "&amp#27;[0m&amp#27;[32m&amp#27;[1mDestinationPoint&amp#27;[0m&amp#27;[32m"&amp#27;[0m     &amp#27;[90m# findDistanceTest.i_enter_as(String,String)&amp#27;[0m
-    &amp#27;[32mThen &amp#27;[0m&amp#27;[32mDistance found in "&amp#27;[0m&amp#27;[32m&amp#27;[1mDistanceOutput_xpath&amp#27;[0m&amp#27;[32m" should be correct&amp#27;[0m &amp#27;[90m# findDistanceTest.distance_between_the_location_should_be(String)&amp#27;[0m
-initializing xl - tascase FindDistance---TC2
-FindDistance is starting from 1
-Total no. of rows are 2
-Total no. of cols are 3
-Clicking on - FromField_id
-Entering text in the field FromTextField_id
-
-  Scenario Outline: Finding distance                                &amp#27;[90m# findDistance.feature:19&amp#27;[0m
-    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mtestcase is "&amp#27;[0m&amp#27;[32m&amp#27;[1mFindDistance&amp#27;[0m&amp#27;[32m" and testcaseId is "&amp#27;[0m&amp#27;[32m&amp#27;[1mTC2&amp#27;[0m&amp#27;[32m"&amp#27;[0m        &amp#27;[90m# findDistanceTest.testcase_is(String,String)&amp#27;[0m
-    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click on "&amp#27;[0m&amp#27;[32m&amp#27;[1mFromField_id&amp#27;[0m&amp#27;[32m"&amp#27;[0m                                   &amp#27;[90m# findDistanceTest.i_click_on(String)&amp#27;[0m
-    &amp#27;[31mAnd &amp#27;[0m&amp#27;[31mI enter "&amp#27;[0m&amp#27;[31m&amp#27;[1mFromTextField_id&amp#27;[0m&amp#27;[31m" as "&amp#27;[0m&amp#27;[31m&amp#27;[1mStartingPoint&amp#27;[0m&amp#27;[31m"&amp#27;[0m               &amp#27;[90m# findDistanceTest.i_enter_as(String,String)&amp#27;[0m
-      &amp#27;[31morg.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: el.setText() failed!
-      Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-      System info: host: 'din16001110.corp.capgemini.com', ip: '10.79.1.115', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_181'
-      Driver info: io.appium.java_client.android.AndroidDriver
-      Capabilities {appActivity: com.google.android.maps.Map..., appPackage: com.google.android.apps.maps, databaseEnabled: false, desired: {appActivity: com.google.android.maps.Map..., appPackage: com.google.android.apps.maps, deviceName: 3300ecdcbc951375, platformName: android, takesScreenshot: true}, deviceManufacturer: Xiaomi, deviceModel: Redmi Note 3, deviceName: 10.79.1.234:5557, deviceScreenSize: 1080x1920, deviceUDID: 10.79.1.234:5557, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, platform: LINUX, platformName: Android, platformVersion: 6.0.1, takesScreenshot: true, warnings: {}, webStorageEnabled: false}
-      Session ID: b005998c-0339-4d38-a30c-9b120cd13212
-      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-      	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-      	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-      	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-      	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-      	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-      	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
-      	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
-      	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
-      	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
-      	at com.dcx.util.BaseTest.type(BaseTest.java:209)
-      	at com.dcx.testcases_stepdefination.findDistanceTest.i_enter_as(findDistanceTest.java:48)
-      	at ✽.And I enter "FromTextField_id" as "StartingPoint"(findDistance.feature:11)
-      &amp#27;[0m
-    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI click on "&amp#27;[0m&amp#27;[36m&amp#27;[1mDestinationField_id&amp#27;[0m&amp#27;[36m"&amp#27;[0m                            &amp#27;[90m# findDistanceTest.i_click_on(String)&amp#27;[0m
-    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI enter "&amp#27;[0m&amp#27;[36m&amp#27;[1mDestinationTextField_id&amp#27;[0m&amp#27;[36m" as "&amp#27;[0m&amp#27;[36m&amp#27;[1mDestinationPoint&amp#27;[0m&amp#27;[36m"&amp#27;[0m     &amp#27;[90m# findDistanceTest.i_enter_as(String,String)&amp#27;[0m
-    &amp#27;[36mThen &amp#27;[0m&amp#27;[36mDistance found in "&amp#27;[0m&amp#27;[36m&amp#27;[1mDistanceOutput_xpath&amp#27;[0m&amp#27;[36m" should be correct&amp#27;[0m &amp#27;[90m# findDistanceTest.distance_between_the_location_should_be(String)&amp#27;[0m
-Closing app
-
-  Scenario: Closing app &amp#27;[90m# findDistance.feature:21&amp#27;[0m
-    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI close app&amp#27;[0m     &amp#27;[90m# findDistanceTest.I_close_app()&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[May 22, 2019 5:22:34 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
+  <testcase name="feature" classname="com.dcx.runner.Runner" time="126.432"/>
 </testsuite>

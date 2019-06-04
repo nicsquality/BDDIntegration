@@ -34,7 +34,7 @@ formatter.match({
   "location": "findDistanceTest.I_launch_app_to_execute_testcase(String)"
 });
 formatter.result({
-  "duration": 20034928907,
+  "duration": 28123830880,
   "status": "passed"
 });
 formatter.match({
@@ -47,7 +47,7 @@ formatter.match({
   "location": "findDistanceTest.i_click_on(String)"
 });
 formatter.result({
-  "duration": 5287119690,
+  "duration": 4614960783,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -173,7 +173,7 @@ formatter.match({
   "location": "findDistanceTest.testcase_is(String,String)"
 });
 formatter.result({
-  "duration": 964911513,
+  "duration": 951694041,
   "status": "passed"
 });
 formatter.match({
@@ -186,7 +186,7 @@ formatter.match({
   "location": "findDistanceTest.i_click_on(String)"
 });
 formatter.result({
-  "duration": 2579512991,
+  "duration": 2367265286,
   "status": "passed"
 });
 formatter.match({
@@ -203,7 +203,7 @@ formatter.match({
   "location": "findDistanceTest.i_enter_as(String,String)"
 });
 formatter.result({
-  "duration": 20771102650,
+  "duration": 18527870116,
   "status": "passed"
 });
 formatter.match({
@@ -216,7 +216,7 @@ formatter.match({
   "location": "findDistanceTest.i_click_on(String)"
 });
 formatter.result({
-  "duration": 4565784342,
+  "duration": 2772843284,
   "status": "passed"
 });
 formatter.match({
@@ -233,7 +233,7 @@ formatter.match({
   "location": "findDistanceTest.i_enter_as(String,String)"
 });
 formatter.result({
-  "duration": 16525217345,
+  "duration": 14387306274,
   "status": "passed"
 });
 formatter.match({
@@ -246,7 +246,7 @@ formatter.match({
   "location": "findDistanceTest.distance_between_the_location_should_be(String)"
 });
 formatter.result({
-  "duration": 3095884851,
+  "duration": 4712222301,
   "status": "passed"
 });
 formatter.scenario({
@@ -304,7 +304,7 @@ formatter.match({
   "location": "findDistanceTest.testcase_is(String,String)"
 });
 formatter.result({
-  "duration": 2343434,
+  "duration": 1846599,
   "status": "passed"
 });
 formatter.match({
@@ -317,7 +317,7 @@ formatter.match({
   "location": "findDistanceTest.i_click_on(String)"
 });
 formatter.result({
-  "duration": 1908706231,
+  "duration": 1813353261,
   "status": "passed"
 });
 formatter.match({
@@ -334,7 +334,7 @@ formatter.match({
   "location": "findDistanceTest.i_enter_as(String,String)"
 });
 formatter.result({
-  "duration": 18576897163,
+  "duration": 17354053487,
   "status": "passed"
 });
 formatter.match({
@@ -347,7 +347,7 @@ formatter.match({
   "location": "findDistanceTest.i_click_on(String)"
 });
 formatter.result({
-  "duration": 3708022477,
+  "duration": 1909541155,
   "status": "passed"
 });
 formatter.match({
@@ -362,42 +362,4 @@ formatter.match({
     }
   ],
   "location": "findDistanceTest.i_enter_as(String,String)"
-});
-formatter.result({
-  "duration": 14362141320,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "DistanceOutput_xpath",
-      "offset": 19
-    }
-  ],
-  "location": "findDistanceTest.distance_between_the_location_should_be(String)"
-});
-formatter.result({
-  "duration": 6731113849,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 21,
-  "name": "Closing app",
-  "description": "",
-  "id": "finding-distance-in-two-locations;closing-app",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 22,
-  "name": "I close app",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "findDistanceTest.I_close_app()"
-});
-formatter.result({
-  "duration": 5438662449,
-  "status": "passed"
-});
 });
